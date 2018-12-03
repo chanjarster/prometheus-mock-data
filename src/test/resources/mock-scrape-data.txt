@@ -1,0 +1,22 @@
+# HELP jvm_buffer_pool_used_bytes Used bytes of a given JVM buffer pool.
+# TYPE jvm_buffer_pool_used_bytes gauge
+jvm_buffer_pool_used_bytes{pool="direct",} 40960.0
+jvm_buffer_pool_used_bytes{pool="mapped",} 0.0
+# HELP jvm_buffer_pool_capacity_bytes Bytes capacity of a given JVM buffer pool.
+# TYPE jvm_buffer_pool_capacity_bytes gauge
+jvm_buffer_pool_capacity_bytes{pool="direct",} 40960.0
+jvm_buffer_pool_capacity_bytes{pool="mapped",} 0.0
+---
+# HELP jvm_buffer_pool_used_buffers Used buffers of a given JVM buffer pool.
+# TYPE jvm_buffer_pool_used_buffers gauge
+jvm_buffer_pool_used_buffers{pool="direct",} 5.0
+jvm_buffer_pool_used_buffers{pool="mapped",} 0.0
+# HELP jvm_info JVM version info
+# TYPE jvm_info gauge
+jvm_info{version="1.8.0_181-b13",vendor="Oracle Corporation",runtime="OpenJDK Runtime Environment",} 1.0
+---------
+# HELP jmx_config_reload_success_total Number of times configuration have successfully been reloaded.
+# TYPE jmx_config_reload_success_total counter
+jmx_config_reload_success_total 0.0
+---
+---
